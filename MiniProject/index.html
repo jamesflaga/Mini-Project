@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Frontend Simplified</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <section>
-    <nav>
-      <img src="/MiniProject/HTML_Practise_Assets/FES.svg" alt="Fontend Simplified Logo">
-      <div>
+
+<!-- ===== NAVIGATION ===== -->
+  <nav class="nav">
+    <!-- Brand Logo -->
+    <img src="./HTML_Practise_Assets/FES.svg" class="logo" alt="Frontend Simplified Logo">
+
+    <!-- Navigation Links -->
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#discord">Discord</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+<!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <div class="container hero__content">
+
+      <!-- Hero Text -->
+      <div class="hero__text">
+        <h1>Best place to learn frontend</h1>
+        <p class="hero__subtitle">
+          Go from absolute beginner to pro with a simplified process.
+        </p>
+        <button class="btn">Start Now</button>
+      </div>
+
+      <!-- Hero Image -->
+      <figure class="hero__image">
+        <img src="./HTML_Practise_Assets/laptop.png" alt="Laptop showing code editor">
+      </figure>
+
+    </div>
+  </header>
+
+
+  <main>
+
+<!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+
+        <div class="section__row">
+
+          <!-- Text Content -->
+          <div class="section__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+
+          <!-- Section Image -->
+          <figure class="section__image">
+            <img src="./HTML_Practise_Assets/about.jpg" alt="Person learning frontend development">
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- ===== DISCORD SECTION ===== -->
+    <section id="discord" class="section section--light">
+      <div class="container">
+        <h2>Discord</h2>
+
+        <div class="section__row">
+
+          <!-- Section Image -->
+          <figure class="section__image">
+            <img src="./HTML_Practise_Assets/discord.png" alt="Discord community logo">
+          </figure>
+
+          <!-- Text Content -->
+          <div class="section__text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Contact</h2>
+
+        <form class="contact__form">
+          <label for="email">Email</label>
+          <input 
+            id="email" 
+            type="email" 
+            placeholder="john@gmail.com" 
+            required
+          >
+
+          <label for="message">Message</label>
+          <textarea 
+            id="message" 
+            rows="5"
+            placeholder="How may we help you?" 
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+<!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__content">
+
+      <img src="./HTML_Practise_Assets/FES.svg" class="logo" alt="Frontend Simplified Logo">
+
+      <div class="footer__links">
         <a href="#about">About</a>
         <a href="#discord">Discord</a>
         <a href="#contact">Contact</a>
       </div>
-    </nav>
-    <header>
-      <div>
-        <h1>Best Place to Learn Frontend</h1>
-        <p>Go from absolute beginner to pro with a simplified process.</p>
-        <button>Start Now</button>
-        <figure>
-          <img src="./HTML_Practise_Assets/laptop.png" alt="Picture of a Laptop">
-        </figure>
-      </div>
-    </header>
-  </section>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officiis quos eveniet reiciendis sed
-          suntquaerat
-          quibusdam tenetur, nemo iste iure aperiam, dolores impedit nam dignissimos repellendus vitae voluptatum
-          laborum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni cupiditate natus nulla! Deserunt id
-          aut ipsa iure magni, asperiores consectetur cumque perferendis impedit deleniti dolore qui amet quae neque.
-        </p>
-        <figure>
-          <img src="./HTML_Practise_Assets/about.jpg" alt="Image of a Laptop">
-        </figure>
-      </div>
-    </section>
-
-    <section id="discord">
-      <h2>Discord</h2>
-      <div>
-        <figure>
-          <img src="./HTML_Practise_Assets/discord.png" alt="Discord Logo">
-        </figure>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, veritatis in mollitia eum dolore quisquam
-          dicta nobis a totam beatae dignissimos sunt unde. Unde vero, deserunt quas ea quibusdam ut?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae dicta dolore necessitatibus
-          iusto et illo quia nostrum deleniti cum similique in sit tenetur officia, dignissimos vitae, tempore hic est!
-        </p>
-      </div>
-    </section>
-
-    <section id="contanct">
-      <h2>Contact</h2>
-      <form action="">
-        <span>Email</span>
-        <input type="text" placeholder="john@gmail.com">
-        <span>Message</span>
-        <textarea type="text" placeholder="How may we help you?"></textarea>
-      </form>
-      <button>Send Message</button>
-      <form action=""></form>
-    </section>
-  </main>
-
-  <footer>
-    <img src="./HTML_Practise_Assets/FES.svg" alt="Frontend Simplified Logo">
-    <div>
-      <a href="#about">About</a>
-      <a href="#discord">Discord</a>
-      <a href="#contanct">Contact</a>
-      <a href="#courses">Courses</a>
+      <p>© 2026 Frontend Simplified. All rights reserved.</p>
     </div>
-    <p>Copyright Frontend Simplified</p>
   </footer>
-</body>
 
+</body>
 </html>

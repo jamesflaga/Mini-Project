@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== LAYOUT UTILITIES ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section--light {
+  background: #f7f7f7;
+}
+
+.section__row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.section__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__image {
+  flex: 1;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  height: 70px;
+  background: #cafdff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo {
+  width: 180px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 32px;
+  font-weight: 700;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #eadcff;
+  min-height: calc(100dvh - 70px);
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+}
+
+.hero__image {
+  flex: 1;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 48px;
+}
+
+
+.btn {
+  background: #05c7cf;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+/* ===== FOOTER ===== */.footer {
+  background: #111;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 24px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .section__row,
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__text {
+    align-items: center;
+  }
+
+}
